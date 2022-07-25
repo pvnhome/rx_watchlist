@@ -17,8 +17,8 @@ import kz.kase.iris.utils.IrisApiUtils;
  * <p><b>Created:</b> 22.07.2022 20:04:29</p>
  * @author victor
  */
-public class Pool {
-   protected static final Log4JLoggerWrapper log = new Log4JLoggerWrapper(Pool.class);
+public class Pull {
+   protected static final Log4JLoggerWrapper log = new Log4JLoggerWrapper(Pull.class);
 
    public static void main(String[] args) {
       ExtendedPreferencesHocon props = AppProps.getProps();

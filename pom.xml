@@ -109,7 +109,7 @@
             <artifactId>exec-maven-plugin</artifactId>
             <version>1.2.1</version>
             <configuration>
-               <mainClass>kz.kase.examples.Push</mainClass>
+               <mainClass>kz.kase.examples.Pull</mainClass>
             </configuration>
          </plugin>
       </plugins>

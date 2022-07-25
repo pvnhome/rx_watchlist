@@ -20,7 +20,7 @@ import kz.kase.iris.model.IrisApiWatchlist.WatchlistSearchRequest;
  * @author victor
  */
 public class Subscribe {
-   private static final Log4JLoggerWrapper log = new Log4JLoggerWrapper(Pool.class);
+   private static final Log4JLoggerWrapper log = new Log4JLoggerWrapper(Subscribe.class);
 
    /**
     * Список кодов инструментов для добавления в список наблюдения.
