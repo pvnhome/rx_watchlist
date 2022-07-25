@@ -1,0 +1,7 @@
+.settings
+target
+.classpath
+.project
+inst.bat
+conf/mqtt_servers.conf
+log/*.log
