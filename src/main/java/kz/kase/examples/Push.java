@@ -46,7 +46,6 @@ public class Push {
          WatchlistTopic watchlistTopic = client.getWatchlistTopic();
 
          // Делаем первоначальный синхронный (blockingSubscribe) запрос на поучение списка наблюдения пользователя.
-         // Этого можно не делать, а просто ожидать первого обновления с сервера.
          watchlistTopic.send(request).blockingSubscribe(Push::printWatchlist, error -> {
             log.logStackTrace(error, "Watchlist request");
          });
@@ -66,6 +65,7 @@ public class Push {
                // Подписка на обновления была настроена выше (см. subscribe).
                watchlistTopic.sendAsync(request);
             } else if (isSameUser(update.getUserNamesList())) {
+               // На сервере обновился список наблюдения подключенного в данный момент пользователя.
                log.debug("update for user %s", userName);
                watchlistTopic.sendAsync(request);
             } else {
